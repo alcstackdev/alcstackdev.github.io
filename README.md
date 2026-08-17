@@ -13,10 +13,17 @@ Tüm AlcStack Dev app'leri için tek, kalıcı legal sayfa barınağı. GitHub P
   tr/terms.html
 ```
 
+## Referans örnek
+
+`_example-filled/` klasörü, `_template-app/`'ın tüm değişkenleri gerçek değerlerle doldurulmuş
+tam bir örneğidir (kurgusal "Daily Verse Bible" app'i ile). Otomasyon yazarken veya elle yeni
+bir app eklerken şüpheye düşülen her durumda buraya bakılabilir — placeholder'ların ne şekilde
+doldurulacağının somut kanıtı budur, `_template-app/` sadece boş iskelet.
+
 ## Yeni bir app eklerken
 
 1. `_template-app/` klasörünü kopyala, adını gerçek app slug'ı ile değiştir
-   (örn. `bible-daily-verse/`).
+   (örn. `bible-daily-verse/`). Doldurma şekli için `_example-filled/`'a bak.
 2. Her HTML dosyasındaki `{{DEĞİŞKEN}}` alanlarını doldur:
    - `{{APP_NAME}}` — Play/App Store'daki gerçek app adı
    - `{{DEVELOPER_NAME}}` — AlcStack Dev (sabit)
